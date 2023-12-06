@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>App RH</title>
     <!-- Corrigindo o caminho do Bootstrap -->
-    <link href="C:/bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -42,14 +42,52 @@
         </nav>
     </header>
 
-    <!-- Restante do seu código permanece inalterado -->
-    <!-- ... -->
+    <div class="container">
 
-    <!-- Corrigindo o caminho do Bootstrap JS -->
-    <script type="text/javascript" src="C:/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+        <h1>Detalhes da vaga:</h1>
+        <div th:each="vaga : ${vaga}" class="container">
+
+            <!-- Seu conteúdo -->
+
+        </div>
+
+        <!-- Seu conteúdo -->
+
+        <h2>Inscritos:</h2>
+
+        <!-- Seu conteúdo -->
+
+        <table class="table table-hover table-responsive w-auto table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Nome do candidato:</th>
+                    <th scope="col">RG:</th>
+                    <th scope="col">E-mail:</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <!-- Seu conteúdo -->
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <footer class="fixed-bottom bg-dark text-center py-3">
+        <span class="text-light align-middle">| App RH - UC 12 | - © 2022 Copyright: CTM Supervisão de Educação
+            Online</span>
+    </footer>
+
+    <script type="text/javascript" src="../bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
+
+
+
+
+
 
 
 
